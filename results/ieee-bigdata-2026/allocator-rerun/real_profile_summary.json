@@ -1,0 +1,22 @@
+{
+  "noaa": {
+    "configurations": 45,
+    "hasp_plus_wins_vs_hasp": 30,
+    "hasp_wins_vs_hasp_plus": 0,
+    "hasp_plus_wins_vs_lef": 24,
+    "lef_wins_vs_hasp_plus": 21,
+    "mean_plus_gain_vs_hasp_pct": 12.8177450959156,
+    "mean_plus_gain_vs_lef_pct": -8.697771902867014,
+    "total_predecessor_skips": 3736
+  },
+  "chicago": {
+    "configurations": 12,
+    "hasp_plus_wins_vs_hasp": 8,
+    "hasp_wins_vs_hasp_plus": 0,
+    "hasp_plus_wins_vs_lef": 11,
+    "lef_wins_vs_hasp_plus": 1,
+    "mean_plus_gain_vs_hasp_pct": 2.3583243829461797,
+    "mean_plus_gain_vs_lef_pct": 4.968626343530388,
+    "total_predecessor_skips": 15526
+  }
+}

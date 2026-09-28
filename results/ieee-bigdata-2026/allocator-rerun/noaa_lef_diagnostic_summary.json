@@ -1,0 +1,14 @@
+{
+  "lef_wins": 21,
+  "budget_counts": {
+    "2458": 0,
+    "4568": 6,
+    "8730": 15
+  },
+  "mean_lef_higher_k_units": 8.476190476190476,
+  "mean_lef_lower_k_units": 13.142857142857142,
+  "mean_endpoints_over_one_tier_apart": 8.142857142857142,
+  "total_higher_k_gain": 0.01378106276351954,
+  "total_lower_k_offset": -0.007408391637816883,
+  "total_gap": 0.006372671125702656
+}
