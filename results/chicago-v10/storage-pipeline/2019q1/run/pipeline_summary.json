@@ -1,0 +1,149 @@
+{
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-1066-gcp-x86_64-with-glibc2.35",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "25.0.1",
+      "datasketches": "5.2.0"
+    }
+  },
+  "baseline": {
+    "baseline_k": 128,
+    "wall_seconds": 4.04930362199957,
+    "cpu_seconds": 3.517961296,
+    "peak_rss_mb": 120.24609375,
+    "rss_delta_mb": 18.30859375,
+    "sketches": 60,
+    "serialized_bytes": 187440
+  },
+  "profiling": {
+    "wall_seconds": 51.41937658900133,
+    "cpu_seconds": 40.785144605,
+    "peak_rss_mb": 125.8984375,
+    "rss_delta_mb": 5.65234375,
+    "tracemalloc_peak_mb": 2.4690380096435547,
+    "profile_rows": 300,
+    "candidate_ks": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ]
+  },
+  "selected": {
+    "budget": 150000,
+    "target": 0.005,
+    "weights": {
+      "trip_total": 4.0,
+      "trip_miles": 1.0,
+      "trip_seconds": 1.0
+    },
+    "allocator_metrics": {
+      "method": "benefit_per_byte",
+      "used_bytes": 148728,
+      "weighted_mean_error": 0.004908416666666662,
+      "weighted_target_hit_rate": 0.625,
+      "runtime_ms": 63.13519000104861,
+      "within_budget": true
+    },
+    "materialize_wall_seconds": 4.235241731003043,
+    "materialize_cpu_seconds": 3.588862845999998,
+    "total_persisted_bytes": 148728,
+    "distinct_k_values": [
+      64,
+      128,
+      256
+    ],
+    "heterogeneous_k_selected": true
+  },
+  "queries": [
+    {
+      "stream": "trip_total",
+      "sketches_read": 20,
+      "bytes_read": 70108,
+      "quantiles": [
+        0.5,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "values": [
+        9.25,
+        45.0,
+        54.25,
+        79.35
+      ],
+      "merge_success": true,
+      "repeats": 10,
+      "latency_ms_mean": 0.7415629992465256,
+      "latency_ms_p50": 0.6878450003569014,
+      "latency_ms_p95": 1.0139574984350472
+    },
+    {
+      "stream": "trip_miles",
+      "sketches_read": 20,
+      "bytes_read": 38648,
+      "quantiles": [
+        0.5,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "values": [
+        0.7,
+        7.4,
+        16.7,
+        18.3
+      ],
+      "merge_success": true,
+      "repeats": 10,
+      "latency_ms_mean": 0.6115789998148102,
+      "latency_ms_p50": 0.5693450002581812,
+      "latency_ms_p95": 0.8234839997385277
+    },
+    {
+      "stream": "trip_seconds",
+      "sketches_read": 20,
+      "bytes_read": 39972,
+      "quantiles": [
+        0.5,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "values": [
+        540.0,
+        1560.0,
+        2100.0,
+        3000.0
+      ],
+      "merge_success": true,
+      "repeats": 10,
+      "latency_ms_mean": 0.5819811001856579,
+      "latency_ms_p50": 0.5317750001267996,
+      "latency_ms_p95": 0.7768585006488138
+    }
+  ],
+  "verification": {
+    "catalog_entries": 60,
+    "all_sketch_files_exist": true,
+    "catalog_bytes": 148728,
+    "bytes_on_disk": 148728,
+    "catalog_bytes_match_files": true,
+    "within_budget": true,
+    "distinct_k_values": [
+      64,
+      128,
+      256
+    ],
+    "heterogeneous_k_selected": true,
+    "all_stream_queries_merged": true,
+    "storage_roundtrip_verified": true,
+    "heterogeneous_storage_claim_verified": true
+  },
+  "profiling_wall_overhead_x": 12.698325783634406,
+  "profiling_cpu_overhead_x": 11.593403444026974
+}

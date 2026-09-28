@@ -1,0 +1,10 @@
+{
+  "feasible_runs": 312,
+  "error_win_fraction": 0.7051282051282052,
+  "joint_win_fraction": 0.657051282051282,
+  "mean_error_improvement_fraction": 0.09510501447798944,
+  "median_error_improvement_fraction": 0.3070507176829572,
+  "p10_error_improvement_fraction": -0.4911084951932419,
+  "p90_error_improvement_fraction": 0.4867145737791541,
+  "losing_runs": 92
+}

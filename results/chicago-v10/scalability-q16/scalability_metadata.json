@@ -1,0 +1,16 @@
+{
+  "options_csv": "results/chicago-v8/replicates/2019q1/options_epoch_100000.csv",
+  "unit_counts": [
+    30,
+    60,
+    120,
+    240
+  ],
+  "bytes_per_unit": [
+    2500
+  ],
+  "repeats": 3,
+  "dp_granularity_bytes": 16,
+  "dp_method_label": "quantized_dp_16B",
+  "note": "granularity=1 is byte-exact DP; granularity>1 is a conservative quantized DP used for runtime scaling"
+}

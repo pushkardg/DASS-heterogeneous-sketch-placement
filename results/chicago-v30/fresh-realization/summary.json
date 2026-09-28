@@ -1,0 +1,23 @@
+{
+  "budget": 150000,
+  "target": 0.005,
+  "epoch_size": 100000,
+  "weights": {
+    "trip_total": 4.0,
+    "trip_miles": 1.0,
+    "trip_seconds": 1.0
+  },
+  "repeats": 5,
+  "uniform_k": 64,
+  "profile_uniform_bytes": 108000,
+  "profile_hasp_weighted_error": 0.004908416666666609,
+  "profile_uniform_weighted_error": 0.009200583333333274,
+  "profile_error_improvement_fraction": 0.46651027561658515,
+  "fresh_hasp_weighted_error_mean": 0.0061614999999999994,
+  "fresh_uniform_weighted_error_mean": 0.009902700000000002,
+  "fresh_error_improvement_fraction_mean": 0.3779604306897558,
+  "fresh_error_improvement_fraction_min": 0.342527386541471,
+  "fresh_error_improvement_fraction_max": 0.4182216661096903,
+  "gain_retained_fraction": 0.8101867213754439,
+  "note": "Fresh KLL objects are rebuilt after allocation; profiling realizations are not reused for evaluation."
+}

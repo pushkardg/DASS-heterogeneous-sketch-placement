@@ -1,0 +1,167 @@
+{
+  "methodology": "independently profiled temporal repository units; no profile-table replication",
+  "statistical_scope": "distinct temporal repository units from one Chicago Taxi domain; not independent domains",
+  "input_streams": 15,
+  "unit_count": 558,
+  "profile_rows": 2790,
+  "epoch_size": 50000,
+  "candidate_ks": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "target": 0.005,
+  "bytes_per_unit": [
+    2000,
+    2500,
+    3000,
+    4000
+  ],
+  "minimum_required_bytes": 952976,
+  "profiling": {
+    "wall_seconds": 261.860772472,
+    "cpu_seconds": 253.87663406299998,
+    "peak_rss_mb": 114.2421875,
+    "rss_delta_mb": 12.78515625,
+    "tracemalloc_peak_mb": 3.8127241134643555,
+    "profile_rows": 2790,
+    "candidate_ks": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ]
+  },
+  "experiment_wall_seconds": 1226.058047003,
+  "comparisons": 12,
+  "hasp_wins": 10,
+  "lef_wins": 2,
+  "ties": 0,
+  "mean_hasp_error_reduction_vs_lef_pct": 2.5917856882498373,
+  "median_hasp_error_reduction_vs_lef_pct": 3.1486631615844725,
+  "by_budget_and_weight": [
+    {
+      "bytes_per_unit": 2000,
+      "weight_profile": "uniform",
+      "winner": "hasp",
+      "hasp_error": 0.007642001891449556,
+      "lef_error": 0.007749779669227335,
+      "hasp_error_reduction_vs_lef_pct": 1.3907205414592683,
+      "hasp_hit_rate": 0.24193548387096775,
+      "lef_hit_rate": 0.2060931899641577
+    },
+    {
+      "bytes_per_unit": 2000,
+      "weight_profile": "total_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.006777100320715135,
+      "lef_error": 0.006970827919281444,
+      "hasp_error_reduction_vs_lef_pct": 2.7791189340717266,
+      "hasp_hit_rate": 0.37544802867383514,
+      "lef_hit_rate": 0.3279569892473118
+    },
+    {
+      "bytes_per_unit": 2000,
+      "weight_profile": "seconds_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.00683820743631554,
+      "lef_error": 0.007042078404057479,
+      "hasp_error_reduction_vs_lef_pct": 2.895039731799537,
+      "hasp_hit_rate": 0.36469534050179214,
+      "lef_hit_rate": 0.30197132616487454
+    },
+    {
+      "bytes_per_unit": 2500,
+      "weight_profile": "uniform",
+      "winner": "hasp",
+      "hasp_error": 0.005391482297089248,
+      "lef_error": 0.005651517651328013,
+      "hasp_error_reduction_vs_lef_pct": 4.601159728797122,
+      "hasp_hit_rate": 0.4874551971326165,
+      "lef_hit_rate": 0.3942652329749104
+    },
+    {
+      "bytes_per_unit": 2500,
+      "weight_profile": "total_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.00496445890338117,
+      "lef_error": 0.005335501925244203,
+      "hasp_error_reduction_vs_lef_pct": 6.9542289940425865,
+      "hasp_hit_rate": 0.5663082437275986,
+      "lef_hit_rate": 0.6630824372759857
+    },
+    {
+      "bytes_per_unit": 2500,
+      "weight_profile": "seconds_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.004828601701548514,
+      "lef_error": 0.005167526432731315,
+      "hasp_error_reduction_vs_lef_pct": 6.558742090529783,
+      "hasp_hit_rate": 0.6075268817204301,
+      "lef_hit_rate": 0.6953405017921147
+    },
+    {
+      "bytes_per_unit": 3000,
+      "weight_profile": "uniform",
+      "winner": "hasp",
+      "hasp_error": 0.004307288748702154,
+      "lef_error": 0.004458996591856507,
+      "hasp_error_reduction_vs_lef_pct": 3.402286591369408,
+      "hasp_hit_rate": 0.6648745519713262,
+      "lef_hit_rate": 0.5842293906810035
+    },
+    {
+      "bytes_per_unit": 3000,
+      "weight_profile": "total_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.004084736496582041,
+      "lef_error": 0.004318835258577536,
+      "hasp_error_reduction_vs_lef_pct": 5.420414254759007,
+      "hasp_hit_rate": 0.6899641577060932,
+      "lef_hit_rate": 0.717741935483871
+    },
+    {
+      "bytes_per_unit": 3000,
+      "weight_profile": "seconds_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.0038161646695904273,
+      "lef_error": 0.004084323721558147,
+      "hasp_error_reduction_vs_lef_pct": 6.56556801686177,
+      "hasp_hit_rate": 0.7419354838709677,
+      "lef_hit_rate": 0.7267025089605734
+    },
+    {
+      "bytes_per_unit": 4000,
+      "weight_profile": "uniform",
+      "winner": "lef",
+      "hasp_error": 0.0032564159466952148,
+      "lef_error": 0.0030495540670957165,
+      "hasp_error_reduction_vs_lef_pct": -6.783348484668972,
+      "hasp_hit_rate": 0.8261648745519713,
+      "lef_hit_rate": 0.9605734767025089
+    },
+    {
+      "bytes_per_unit": 4000,
+      "weight_profile": "total_heavy",
+      "winner": "lef",
+      "hasp_error": 0.003283983808409999,
+      "lef_error": 0.003164910527394738,
+      "hasp_error_reduction_vs_lef_pct": -3.7622953314032084,
+      "hasp_hit_rate": 0.7768817204301075,
+      "lef_hit_rate": 0.7706093189964157
+    },
+    {
+      "bytes_per_unit": 4000,
+      "weight_profile": "seconds_heavy",
+      "winner": "hasp",
+      "hasp_error": 0.002960651300765513,
+      "lef_error": 0.0029929691781715117,
+      "hasp_error_reduction_vs_lef_pct": 1.0797931913800216,
+      "hasp_hit_rate": 0.8333333333333334,
+      "lef_hit_rate": 0.7831541218637993
+    }
+  ]
+}

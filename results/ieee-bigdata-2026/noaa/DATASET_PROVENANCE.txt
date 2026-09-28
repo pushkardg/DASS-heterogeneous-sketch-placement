@@ -1,0 +1,8 @@
+Dataset: NOAA Global Historical Climatology Network Daily (GHCN-Daily)
+Source: NOAA NCEI GHCN-Daily bulk by-year CSV archive
+Years: 2019 2020 2021 2022 2023
+Metrics: TMAX, PRCP, AWND
+Epoch size: 100000 values
+Candidate K values: 64,128,256,512,1024
+Purpose: cross-domain validation of the precision-gap / heterogeneous-placement result.
+Budget rule: derived from measured NOAA uniform-tier footprints; Chicago quotas are not reused.

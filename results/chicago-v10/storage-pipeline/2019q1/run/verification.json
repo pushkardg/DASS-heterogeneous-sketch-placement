@@ -1,0 +1,17 @@
+{
+  "catalog_entries": 60,
+  "all_sketch_files_exist": true,
+  "catalog_bytes": 148728,
+  "bytes_on_disk": 148728,
+  "catalog_bytes_match_files": true,
+  "within_budget": true,
+  "distinct_k_values": [
+    64,
+    128,
+    256
+  ],
+  "heterogeneous_k_selected": true,
+  "all_stream_queries_merged": true,
+  "storage_roundtrip_verified": true,
+  "heterogeneous_storage_claim_verified": true
+}

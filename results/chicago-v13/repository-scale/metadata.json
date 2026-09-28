@@ -1,0 +1,18 @@
+{
+  "benchmark": "synthetic DASS adjacent-upgrade allocator core",
+  "unit_counts": [
+    1000,
+    10000,
+    100000,
+    1000000
+  ],
+  "repeats": 3,
+  "candidate_k_values": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "note": "Allocator-only benchmark; excludes sketch profiling, catalog I/O, and exact DP."
+}

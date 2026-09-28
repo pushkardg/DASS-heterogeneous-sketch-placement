@@ -1,0 +1,32 @@
+[
+  {
+    "name": "2019q1",
+    "trip_total": "results/replicates/2019q1/chicago-total/stream.csv",
+    "trip_miles": "results/replicates/2019q1/chicago-miles/stream.csv",
+    "trip_seconds": "results/replicates/2019q1/chicago-seconds/stream.csv"
+  },
+  {
+    "name": "2019q2",
+    "trip_total": "results/replicates/2019q2/chicago-total/stream.csv",
+    "trip_miles": "results/replicates/2019q2/chicago-miles/stream.csv",
+    "trip_seconds": "results/replicates/2019q2/chicago-seconds/stream.csv"
+  },
+  {
+    "name": "2019q3",
+    "trip_total": "results/replicates/2019q3/chicago-total/stream.csv",
+    "trip_miles": "results/replicates/2019q3/chicago-miles/stream.csv",
+    "trip_seconds": "results/replicates/2019q3/chicago-seconds/stream.csv"
+  },
+  {
+    "name": "2019q4",
+    "trip_total": "results/replicates/2019q4/chicago-total/stream.csv",
+    "trip_miles": "results/replicates/2019q4/chicago-miles/stream.csv",
+    "trip_seconds": "results/replicates/2019q4/chicago-seconds/stream.csv"
+  },
+  {
+    "name": "2020q1",
+    "trip_total": "results/replicates/2020q1/chicago-total/stream.csv",
+    "trip_miles": "results/replicates/2020q1/chicago-miles/stream.csv",
+    "trip_seconds": "results/replicates/2020q1/chicago-seconds/stream.csv"
+  }
+]

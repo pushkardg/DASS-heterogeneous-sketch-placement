@@ -1,0 +1,15 @@
+{
+  "wall_seconds": 51.41937658900133,
+  "cpu_seconds": 40.785144605,
+  "peak_rss_mb": 125.8984375,
+  "rss_delta_mb": 5.65234375,
+  "tracemalloc_peak_mb": 2.4690380096435547,
+  "profile_rows": 300,
+  "candidate_ks": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ]
+}

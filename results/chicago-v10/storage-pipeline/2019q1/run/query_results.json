@@ -1,0 +1,68 @@
+[
+  {
+    "stream": "trip_total",
+    "sketches_read": 20,
+    "bytes_read": 70108,
+    "quantiles": [
+      0.5,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "values": [
+      9.25,
+      45.0,
+      54.25,
+      79.35
+    ],
+    "merge_success": true,
+    "repeats": 10,
+    "latency_ms_mean": 0.7415629992465256,
+    "latency_ms_p50": 0.6878450003569014,
+    "latency_ms_p95": 1.0139574984350472
+  },
+  {
+    "stream": "trip_miles",
+    "sketches_read": 20,
+    "bytes_read": 38648,
+    "quantiles": [
+      0.5,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "values": [
+      0.7,
+      7.4,
+      16.7,
+      18.3
+    ],
+    "merge_success": true,
+    "repeats": 10,
+    "latency_ms_mean": 0.6115789998148102,
+    "latency_ms_p50": 0.5693450002581812,
+    "latency_ms_p95": 0.8234839997385277
+  },
+  {
+    "stream": "trip_seconds",
+    "sketches_read": 20,
+    "bytes_read": 39972,
+    "quantiles": [
+      0.5,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "values": [
+      540.0,
+      1560.0,
+      2100.0,
+      3000.0
+    ],
+    "merge_success": true,
+    "repeats": 10,
+    "latency_ms_mean": 0.5819811001856579,
+    "latency_ms_p50": 0.5317750001267996,
+    "latency_ms_p95": 0.7768585006488138
+  }
+]

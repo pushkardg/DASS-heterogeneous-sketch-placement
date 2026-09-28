@@ -1,0 +1,21 @@
+{
+  "options_csv": "results/chicago-v10/storage-pipeline/2019q1/run/profile/profiles.csv",
+  "unit_counts": [
+    30,
+    60,
+    120,
+    240
+  ],
+  "bytes_per_unit": [
+    2500
+  ],
+  "repeats": 5,
+  "dp_granularity_bytes": 16,
+  "dp_method_label": null,
+  "include_dp": false,
+  "methods": [
+    "hasp",
+    "largest_error_first"
+  ],
+  "note": "HASP and LEF use identical option tables and budgets. Timings are allocator-core only. granularity=1 is byte-exact DP; granularity>1 is conservative quantized DP used for runtime scaling."
+}

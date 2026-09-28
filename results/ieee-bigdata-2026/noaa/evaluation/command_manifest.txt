@@ -1,0 +1,2 @@
+python experiments/noaa_second_dataset/evaluate_noaa.py \
+  --data-root results/ieee-bigdata-2026/noaa/data --output results/ieee-bigdata-2026/noaa/evaluation --epoch-size 100000 --target 0.005

@@ -1,0 +1,52 @@
+{
+  "dataset": "NOAA GHCN-Daily",
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "metrics": [
+    "tmax",
+    "prcp",
+    "awnd"
+  ],
+  "epoch_size": 100000,
+  "candidate_ks": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "target": 0.005,
+  "budget_rule": "three midpoint bytes/unit values between measured NOAA uniform K=64/128, 128/256, and 256/512 tiers",
+  "selected_bytes_per_unit": [
+    2458,
+    4568,
+    8730
+  ],
+  "overall_uniform_bytes_per_unit": {
+    "64": 1796.5333333333333,
+    "128": 3119.786666666667,
+    "256": 6016.373333333333,
+    "512": 11443.164444444445,
+    "1024": 22679.093333333334
+  },
+  "profile_rows": 1125,
+  "repository_units": 225,
+  "configurations": 45,
+  "feasible_configurations": 45,
+  "hasp_wins_vs_uniform": 40,
+  "hasp_losses_vs_uniform": 5,
+  "hasp_wins_vs_lef": 19,
+  "lef_wins_vs_hasp": 26,
+  "mean_hasp_improvement_vs_uniform_pct": 30.73897379386412,
+  "median_hasp_improvement_vs_uniform_pct": 39.8019002132585,
+  "mean_hasp_improvement_vs_lef_pct": -32.28554386956969,
+  "wall_seconds": 37.16723016399919,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-1066-gcp-x86_64-with-glibc2.35",
+  "methodological_scope": "cross-domain validation on one additional public domain; not a claim of universal generality"
+}
